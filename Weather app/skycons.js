@@ -534,6 +534,13 @@
 
     sun(ctx, t, w * 0.5, h * 0.5, s, s * STROKE, color);
   };
+  Skycons.SUNNY = function(ctx, t, color) {
+    var w = ctx.canvas.width,
+        h = ctx.canvas.height,
+        s = Math.min(w, h);
+
+    sun(ctx, t, w * 0.5, h * 0.5, s, s * STROKE, color);
+  };
 
   Skycons.CLEAR_NIGHT = function(ctx, t, color) {
     var w = ctx.canvas.width,
